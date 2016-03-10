@@ -28,8 +28,9 @@ t0 = time()
 clf.fit(features_train,labels_train);
 t1=time()-t0;
 print "training time:", round(t1, 3), "s"
+t1=time();
 test1=clf.predict(features_test);
-print "prediction time:", round(time(), 3), "s"
+print "prediction time:", round(time()-t1, 3), "s"
 score1=accuracy_score(test1,labels_test);
 print score1;
 
