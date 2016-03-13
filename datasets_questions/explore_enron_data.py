@@ -18,5 +18,18 @@
 import pickle
 
 enron_data = pickle.load(open("../final_project/final_project_dataset.pkl", "r"))
-
+"""
+val=0;
+for k in enron_data:
+    if enron_data[k]["poi"]==1:
+        val=val+1;
+print val
+"""
+val=0;
+for k in enron_data:
+    if enron_data[k]["email_address"]!="NaN":
+        val=val+1;
+print val
+#print enron_data["PRENTICE JAMES"];
+#print enron_data["LAY KENNETH L"];
 
