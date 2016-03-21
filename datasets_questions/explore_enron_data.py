@@ -30,6 +30,17 @@ for k in enron_data:
     if enron_data[k]["email_address"]!="NaN":
         val=val+1;
 print val
+"""
+mini =12312121212121;
+maxi=0;
+for k in enron_data:
+     if (enron_data[k]["salary"]!="NaN" and enron_data[k]["salary"]<mini ):
+         mini = enron_data[k]["salary"];
+     if (enron_data[k]["salary"]!=26704229 and enron_data[k]["salary"]!="NaN" and enron_data[k]["salary"]>maxi ):
+         maxi = enron_data[k]["salary"];
+print maxi;
+print mini;
+"""
 #print enron_data["PRENTICE JAMES"];
 #print enron_data["LAY KENNETH L"];
 
